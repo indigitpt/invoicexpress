@@ -1,0 +1,44 @@
+{
+    "name": "indigit/invoicexpress",
+    "description": "A simple PHP wrapper for InvoiceXpress API",
+    "homepage": "https://indigit.pt",
+    "keywords": [
+        "invoicexpress",
+        "invoice",
+        "api"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.2.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "fortis/iso-currency": "^1.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/support": "~5.8.0|^6.0|^7.0",
+        "laravel/helpers": "^1.1",
+        "nesbot/carbon": "^2.31"
+    },
+    "autoload": {
+        "psr-4": {
+            "InvoiceXpress\\": "src/InvoiceXpress/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "8.0",
+        "fzaninotto/faker": "^1.9"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
