@@ -15,7 +15,7 @@
         "ext-curl": "*",
         "ext-json": "*",
         "fortis/iso-currency": "^1.0",
-        "guzzlehttp/guzzle": "^7.0",
+        "guzzlehttp/guzzle": "~6.0",
         "illuminate/support": "~5.8.0|^6.0|^7.0",
         "laravel/helpers": "^1.1",
         "nesbot/carbon": "^2.31"
