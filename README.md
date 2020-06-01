@@ -42,7 +42,7 @@ This plugin comes with some Laravel dependencies and tools but it should work ou
 ## Installation
 
 Install the package via composer: `composer require indigit/invoicexpress`
-
+For DEV Build : `composer require indigit/invoicexpress --dev`
 
 ### Example of Auth Usage
 
