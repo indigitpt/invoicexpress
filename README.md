@@ -26,19 +26,6 @@ This plugin comes with some Laravel dependencies and tools but it should work ou
 - [x] Taxes: Get / Create / Update / Delete / List
 - [x] Accounts: Get / Create / Update / Create Existing
 
-## Requirements
-
-```
-"php": ">=7.2.0",
-"ext-curl": "*",
-"ext-json": "*",
-"fortis/iso-currency": "^1.0",
-"guzzlehttp/guzzle": "^7.0",
-"illuminate/support": "~5.8.0|^6.0|^7.0",
-"laravel/helpers": "^1.1",
-"nesbot/carbon": "^2.31"
-```
-
 ## Installation
 
 Install the package via composer: `composer require indigit/invoicexpress`
