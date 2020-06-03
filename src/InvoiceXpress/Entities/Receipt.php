@@ -409,6 +409,8 @@ class Receipt extends AbstractEntity
         if ($this->getInvoice() === null) {
             throw new ObjectMissing('invoice');
         }
-        return \InvoiceXpress\Api\Invoice::receiptCreate($this->getAuth(), $this->getInvoice(), $this);
+        $object = \InvoiceXpress\Api\Invoice::receiptCreate($this->getAuth(), $this->getInvoice(), $this);
+        $this->fromArray($object->toArray());
+        return $this;
     }
 }

@@ -231,10 +231,14 @@ class Tax extends AbstractEntity
     public function save($auth = null)
     {
         parent::save($auth);
+
         if (!$this->isCreated()) {
-            return \InvoiceXpress\Api\Tax::create($this->getAuth(), $this);
+            $object = \InvoiceXpress\Api\Tax::create($this->getAuth(), $this);
+        }else{
+            $object = \InvoiceXpress\Api\Tax::update($this->getAuth(), $this);
         }
-        return \InvoiceXpress\Api\Tax::update($this->getAuth(), $this);
+        $this->fromArray($object->toArray());
+        return $this;
     }
 
 }

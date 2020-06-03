@@ -46,7 +46,7 @@ class InvalidResponse extends Generic
         }
 
         $this->addContext('message', $message);
-        parent::__construct(sprintf('There an error with the request: %s', $message), $code, $previous);
+        parent::__construct(sprintf('InvoiceXpress: There an error with the request: %s', $message), $code, $previous);
     }
 
     /**

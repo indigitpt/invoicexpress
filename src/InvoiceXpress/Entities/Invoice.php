@@ -1092,8 +1092,11 @@ class Invoice extends AbstractEntity
     {
         parent::save($auth);
         if (!$this->isCreated()) {
-            return \InvoiceXpress\Api\Invoice::create($this->getAuth(), $this);
+            $object = \InvoiceXpress\Api\Invoice::create($this->getAuth(), $this);
+        }else{
+            $object =\InvoiceXpress\Api\Invoice::update($this->getAuth(), $this);
         }
-        return \InvoiceXpress\Api\Invoice::update($this->getAuth(), $this);
+        $this->fromArray($object->toArray());
+        return $this;
     }
 }

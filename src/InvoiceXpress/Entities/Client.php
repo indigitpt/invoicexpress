@@ -466,9 +466,13 @@ class Client extends AbstractEntity
     public function save($auth = null)
     {
         parent::save($auth);
+
         if (!$this->isCreated()) {
-            return Clients::create($this->getAuth(), $this);
+            $object = Clients::create($this->getAuth(), $this);
+        }else{
+            $object = Clients::update($this->getAuth(), $this);
         }
-        return Clients::update($this->getAuth(), $this);
+        $this->fromArray($object->toArray());
+        return $this;
     }
 }

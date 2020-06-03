@@ -374,9 +374,14 @@ class Account extends AbstractEntity
     public function save($auth = null, $existing = true)
     {
         parent::save($auth);
+
+
         if (!$this->isCreated()) {
-            return \InvoiceXpress\Api\Account::create($this->getAuth(), $this, $existing);
+            $object = \InvoiceXpress\Api\Account::create($this->getAuth(), $this, $existing);
+        }else{
+            $object = \InvoiceXpress\Api\Account::update($this->getAuth(), $this);
         }
-        return \InvoiceXpress\Api\Account::update($this->getAuth(), $this);
+        $this->fromArray($object->toArray());
+        return $this;
     }
 }
