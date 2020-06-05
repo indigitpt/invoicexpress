@@ -97,7 +97,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getPaymentMechanism(): string
+    public function getPaymentMechanism()
     {
         return $this->payment_mechanism;
     }
@@ -115,7 +115,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getNote(): string
+    public function getNote()
     {
         return $this->note;
     }
@@ -133,7 +133,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getSerie(): string
+    public function getSerie()
     {
         return $this->serie;
     }
@@ -169,7 +169,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getPaymentDate(): string
+    public function getPaymentDate()
     {
         return $this->payment_date;
     }
@@ -187,7 +187,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getInvoiceId(): string
+    public function getInvoiceId()
     {
         return $this->invoice_id;
     }
@@ -216,7 +216,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->status;
     }
@@ -224,7 +224,7 @@ class Receipt extends AbstractEntity
     /**
      * @return bool
      */
-    public function isArchived(): bool
+    public function isArchived()
     {
         return $this->archived;
     }
@@ -232,7 +232,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getSequenceNumber(): string
+    public function getSequenceNumber()
     {
         return $this->sequence_number;
     }
@@ -240,7 +240,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getInvertedSequenceNumber(): string
+    public function getInvertedSequenceNumber()
     {
         return $this->inverted_sequence_number;
     }
@@ -248,7 +248,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getDate(): string
+    public function getDate()
     {
         return $this->date;
     }
@@ -256,7 +256,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getDueDate(): string
+    public function getDueDate()
     {
         return $this->due_date;
     }
@@ -264,7 +264,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getReference(): string
+    public function getReference()
     {
         return $this->reference;
     }
@@ -272,7 +272,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getObservations(): string
+    public function getObservations()
     {
         return $this->observations;
     }
@@ -280,7 +280,7 @@ class Receipt extends AbstractEntity
     /**
      * @return int
      */
-    public function getRetention(): int
+    public function getRetention()
     {
         return $this->retention;
     }
@@ -288,7 +288,7 @@ class Receipt extends AbstractEntity
     /**
      * @return int
      */
-    public function getPermalink(): int
+    public function getPermalink()
     {
         return $this->permalink;
     }
@@ -296,7 +296,7 @@ class Receipt extends AbstractEntity
     /**
      * @return int
      */
-    public function getSaftHash(): int
+    public function getSaftHash()
     {
         return $this->saft_hash;
     }
@@ -344,7 +344,7 @@ class Receipt extends AbstractEntity
     /**
      * @return string
      */
-    public function getCurrency(): string
+    public function getCurrency()
     {
         return $this->currency;
     }
