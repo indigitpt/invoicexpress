@@ -1,4 +1,4 @@
-# Laravel Localization
+# InvoiceXpress PHP API
 
 [![Latest Stable Version](https://poser.pugx.org/indigit/invoicexpress/v)](//packagist.org/packages/indigit/invoicexpress) [![Total Downloads](https://poser.pugx.org/indigit/invoicexpress/downloads)](//packagist.org/packages/indigit/invoicexpress) [![Latest Unstable Version](https://poser.pugx.org/indigit/invoicexpress/v/unstable)](//packagist.org/packages/indigit/invoicexpress) [![License](https://poser.pugx.org/indigit/invoicexpress/license)](//packagist.org/packages/indigit/invoicexpress)
 
